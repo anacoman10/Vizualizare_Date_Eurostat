@@ -1,0 +1,111 @@
+body {
+
+	background: linear-gradient(purple,black,blue);
+	background-size: 600% 600%;
+	animation-duration: 30s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+
+
+table,th,td{
+
+    
+    text-align: center;
+    background-color:white;
+    border:1px solid black;
+    border-collapse: separate;
+   
+    
+}
+
+
+button,select{
+        background-image: linear-gradient(to left, #6a3093 0%, #a044ff  51%, #6a3093  100%);
+        margin: 10px;
+        padding: 20px 45px;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration-color: black;
+        font-family:"Verdana, Geneva, Tahoma, sans-serif" ;
+        transition: 0.5s;
+        background-size: 200% auto;  
+        border-radius: 20px;
+}
+
+button select:hover{
+   
+    background-color: whitesmoke;
+    
+}
+
+button:focus {
+    outline-color: transparent;
+    outline-style: solid;
+    box-shadow: 0 0 0 4px #5a01a7;
+    transition: 0.9s;
+}
+
+
+#selectors{
+    height: auto;
+    width:100%;
+    text-align: center;
+    position: absolute;
+}
+
+
+  #barChart{
+      position: relative;    
+      width: 1000px;
+      margin-left: 20px;
+      padding: 2px;
+}  
+
+
+  #chartContainer1{
+    
+    margin-left: 100px;
+    border-radius: 10px;
+}
+
+  #popUpChart {
+      width: auto;
+      padding: 10px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 10pt;
+      background-color: rgb(254, 255, 212);
+      border-radius: 7px;
+      position: absolute;
+      display: none;
+}
+
+
+
+  #popUpChart::before {
+     
+      width: auto;
+      height: auto;
+      transform: rotate(45deg);
+      background-color: rgb(224, 224, 221);
+      position: absolute;
+      left: -6px;
+      top: 68px;
+}
+
+
+@media screen and (max-width: 992px) {
+    body {
+     
+	background: linear-gradient((-45deg),purple,blue);
+    animation-timing-function: 10s;
+    }
+  }

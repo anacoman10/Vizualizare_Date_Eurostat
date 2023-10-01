@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+  <title>Statistica Eurostat</title>
+  <link rel="stylesheet" href="3_1082_Coman_Claudia_Ana_Maria.css">
+
+
+</head>
+
+<body>
+
+    <div id="selector">
+      <select  type="buttonTara"  id="tari">
+      <option selected disabled>Selecteaza o tara</option>
+      </select>    
+    <select  type="buttonAni" id="ani">
+      <option selected disabled>Selecteaza un an</option>
+    </select>
+    <select  type="buttonIndicatori" id="indicatori">
+      <option selected disabled>Selecteaza un indicator</option>
+    </select>
+
+    <button id="buttonChart">GRAFIC</button>
+    <button id="buttonTable">TABEL</button>
+    <button id="buttonBubble">BUBBLE CHART PE FIECARE AN</button>
+    <button id="buttonAnimatii">ANIMEAZA GRAFICUL</button>
+    
+    </div>
+    <div id="barChart"></div>
+    <div id="popUpChart">
+      <p id="popUpText" ></p>
+    </div>
+    <div><canvas width="1000px" height="500px" style="width:1000px; height:500px;" id="chartContainer1"></canvas>    
+    </div>
+ 
+    <table style="visibility: hidden" id="culoriTabel">
+        <thead style="visibility: hidden" id="tHead" >
+            <tr>
+                <th>   </th>
+                <th><b>SPERANTA DE VIATA</b></th>
+                <th><b>PIB per LOCUITOR</b></th>
+                <th><b>POPULATIE</b></th>
+            </tr>
+        </thead>
+        <tbody id="tBody"></tbody>
+    </table>
+
+
+
+  
+          
+   </body>
+      <script  src="3_1082_Coman_Claudia_Ana_Maria.js">
+
+      </script>
+</body>
+</html>
